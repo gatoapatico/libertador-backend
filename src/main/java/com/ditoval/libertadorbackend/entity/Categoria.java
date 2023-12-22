@@ -2,6 +2,9 @@ package com.ditoval.libertadorbackend.entity;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Categoria {
 
@@ -13,6 +16,10 @@ public class Categoria {
     @Column(columnDefinition = "TEXT")
     private String descripcionLarga;
     private double precio;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "categoria_id")
+    private List<Imagen> imagenes = new ArrayList<>();
 
     public Categoria() {
     }
@@ -65,6 +72,14 @@ public class Categoria {
         this.precio = precio;
     }
 
+    public List<Imagen> getImagenes() {
+        return imagenes;
+    }
+
+    public void setImagenes(List<Imagen> imagenes) {
+        this.imagenes = imagenes;
+    }
+
     @Override
     public String toString() {
         return "Categoria{" +
@@ -73,6 +88,7 @@ public class Categoria {
                 ", descripcionBreve='" + descripcionBreve + '\'' +
                 ", descripcionLarga='" + descripcionLarga + '\'' +
                 ", precio=" + precio +
+                ", imagenes=" + imagenes +
                 '}';
     }
 }

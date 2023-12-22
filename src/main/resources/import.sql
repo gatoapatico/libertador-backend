@@ -10,3 +10,20 @@ INSERT INTO categoria (nombre, descripcion_breve, descripcion_larga, precio) VAL
 INSERT INTO categoria (nombre, descripcion_breve, descripcion_larga, precio) VALUES ('Loft Relojero', 'Moderno loft con temática steampunk y relojes de época, café express, desayuno continental a la habitación.', 'El Loft Relojero ofrece una estadía contemporánea con un toque steam. Sus paredes de ladrillo y vigas de acero con terminaciones oxidadas se combinan con antiguos relojes de pie y engranajes decorativos. El mobiliario moderno y una máquina de café express le dan un toque industrial. Los huéspedes pueden tener su desayuno continental servido en la intimacy de la suite.', 200);
 INSERT INTO categoria (nombre, descripcion_breve, descripcion_larga, precio) VALUES ('Vista al Ayer', 'Habitación nostálgica con balcón y buena vista panorámica, decoración vintage.', 'Las habitaciones Vista al Ayer ubicadas en los pisos superiores son una invitación a mirar hacia atrás en el tiempo. Sus balcones y ventanales ofrecen hermosas vistas panorámicas mientras que en el interior nos rodea una cálida decoración de antaño con céfiro en las cortinas, un reloj de péndulo y mobiliario francés pintado a mano que le dará la bienvenida.', 220);
 INSERT INTO categoria (nombre, descripcion_breve, descripcion_larga, precio) VALUES ('El Ático', 'Exclusivo ático de estilo señorial en el último piso, con mayordomo privado.', 'Situado en el último piso del edificio histórico, El Ático es la joya arquitectónica del Libertador. Un mayordomo personal estará al servicio permanente en esta suite señorial de corte inglés, con biblioteca privada, chimenea, fina cristalería y piezas de decoración que evocan la realeza europea. El acceso a la terraza superior le permitirá disfrutar de la ciudad desde las alturas mientras saborea una copa de nuestro mejor coñac.', 350);
+
+
+INSERT INTO imagen (categoria_id, path) VALUES (1, 'suite-imperial-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (1, 'suite-imperial-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (1, 'suite-imperial-3.png');
+INSERT INTO imagen (categoria_id, path) VALUES (2, 'suite-clasica-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (2, 'suite-clasica-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (3, 'habitacion-retro-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (3, 'habitacion-retro-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (4, 'loft-relojero-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (4, 'loft-relojero-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (5, 'vista-al-ayer-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (5, 'vista-al-ayer-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (5, 'vista-al-ayer-3.png');
+INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-1.png');
+INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-2.png');
+INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-3.png');
