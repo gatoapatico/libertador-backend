@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
+
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
@@ -37,5 +40,12 @@ public class UsuarioController {
     @DeleteMapping("/{id}")
     public void deleteUsuario(@PathVariable int id) {
         service.deleteUsuario(id);
+    }
+
+    @PostMapping("/login")
+    public Usuario login(@RequestBody Map<String, Object> body) {
+        String email = (String) body.get("email");
+        String password = (String) body.get("password");
+        return service.login(email, password);
     }
 }
