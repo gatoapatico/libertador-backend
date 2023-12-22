@@ -1,0 +1,5 @@
+INSERT INTO usuario (nombre, apellido, email, password, dni, telefono, tipo) VALUES ('Alvaro', 'Fernandez', 'afernandez@gmail.com', 'afernandez123', '42356967', '963852741', 'Administrador');
+INSERT INTO usuario (nombre, apellido, email, password, dni, telefono, tipo) VALUES ('Miguel', 'Zuloeta', 'mzuloeta@gmail.com', 'mzuloeta123', '45285963', '987654321', 'Recepcionista');
+INSERT INTO usuario (nombre, apellido, email, password, dni, telefono, tipo) VALUES ('Diego', 'Fernandez', 'dfernandez@gmail.com', 'dfernandez123', '47185963', '951247856', 'Cliente');
+INSERT INTO usuario (nombre, apellido, email, password, dni, telefono, tipo) VALUES ('Brenda', 'Gonzales', 'bgonzales@gmail.com', 'bgonzales123', '42365951', '965214856', 'Cliente');
+INSERT INTO usuario (nombre, apellido, email, password, dni, telefono, tipo) VALUES ('Javier', 'Daum', 'jdaum@gmail.com', 'jdaum123', '42312693', '941258369', 'Cliente');

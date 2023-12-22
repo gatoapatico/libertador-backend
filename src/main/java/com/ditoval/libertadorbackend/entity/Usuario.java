@@ -17,11 +17,12 @@ public class Usuario {
     private String password;
     private String dni;
     private String telefono;
+    private String tipo;
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String apellido, String email, String password, String dni, String telefono) {
+    public Usuario(String nombre, String apellido, String email, String password, String dni, String telefono, String tipo) {
         super();
         this.nombre = nombre;
         this.apellido = apellido;
@@ -29,6 +30,7 @@ public class Usuario {
         this.password = password;
         this.dni = dni;
         this.telefono = telefono;
+        this.tipo = tipo;
     }
 
     public int getId() {
@@ -87,6 +89,14 @@ public class Usuario {
         this.telefono = telefono;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
@@ -97,6 +107,7 @@ public class Usuario {
                 ", password='" + password + '\'' +
                 ", dni='" + dni + '\'' +
                 ", telefono='" + telefono + '\'' +
+                ", tipo='" + tipo + '\'' +
                 '}';
     }
 }

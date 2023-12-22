@@ -1,6 +1,7 @@
 package com.ditoval.libertadorbackend.service;
 
 import com.ditoval.libertadorbackend.entity.Usuario;
+import com.ditoval.libertadorbackend.exception.UsuarioNotFoundException;
 import com.ditoval.libertadorbackend.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,5 +34,13 @@ public class UsuarioService {
 
     public void deleteUsuario(int id) {
         repository.deleteById(id);
+    }
+
+    public Usuario login(String email, String password) {
+        Usuario usuario = repository.getUsuarioLoggingData(email, password);
+        if(usuario == null) {
+            throw new UsuarioNotFoundException("Las credenciales ingresadas son inválidas.");
+        }
+        return usuario;
     }
 }
