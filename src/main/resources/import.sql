@@ -27,3 +27,23 @@ INSERT INTO imagen (categoria_id, path) VALUES (5, 'vista-al-ayer-3.png');
 INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-1.png');
 INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-2.png');
 INSERT INTO imagen (categoria_id, path) VALUES (6, 'atico-3.png');
+
+
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (1, 'Disponible', '101');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (1, 'Disponible', '102');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (1, 'Disponible', '103');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (2, 'Disponible', '201');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (2, 'Disponible', '202');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (2, 'Disponible', '203');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (3, 'Disponible', '301');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (3, 'Disponible', '302');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (3, 'Disponible', '303');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (4, 'Disponible', '401');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (4, 'Disponible', '402');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (4, 'Disponible', '403');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (5, 'Disponible', '501');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (5, 'Disponible', '502');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (5, 'Disponible', '503');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '601');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '602');
+INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '603');

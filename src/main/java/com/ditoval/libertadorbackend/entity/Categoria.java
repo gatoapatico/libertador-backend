@@ -1,5 +1,6 @@
 package com.ditoval.libertadorbackend.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -20,6 +21,10 @@ public class Categoria {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "categoria_id")
     private List<Imagen> imagenes = new ArrayList<>();
+
+    @JsonIgnoreProperties("categoria")
+    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    private List<Habitacion> habitaciones;
 
     public Categoria() {
     }
@@ -80,6 +85,14 @@ public class Categoria {
         this.imagenes = imagenes;
     }
 
+    public List<Habitacion> getHabitaciones() {
+        return habitaciones;
+    }
+
+    public void setHabitaciones(List<Habitacion> habitaciones) {
+        this.habitaciones = habitaciones;
+    }
+
     @Override
     public String toString() {
         return "Categoria{" +
@@ -89,6 +102,7 @@ public class Categoria {
                 ", descripcionLarga='" + descripcionLarga + '\'' +
                 ", precio=" + precio +
                 ", imagenes=" + imagenes +
+                ", habitaciones=" + habitaciones +
                 '}';
     }
 }
