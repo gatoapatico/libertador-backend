@@ -26,6 +26,14 @@ public class Categoria {
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
     private List<Habitacion> habitaciones;
 
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinTable(
+            name = "categoria_servicios",
+            joinColumns = @JoinColumn(name = "categoria_id"),
+            inverseJoinColumns = @JoinColumn(name = "servicio_id")
+    )
+    private List<Servicio> servicios = new ArrayList<>();
+
     public Categoria() {
     }
 
@@ -93,6 +101,14 @@ public class Categoria {
         this.habitaciones = habitaciones;
     }
 
+    public List<Servicio> getServicios() {
+        return servicios;
+    }
+
+    public void setServicios(List<Servicio> servicios) {
+        this.servicios = servicios;
+    }
+
     @Override
     public String toString() {
         return "Categoria{" +
@@ -103,6 +119,7 @@ public class Categoria {
                 ", precio=" + precio +
                 ", imagenes=" + imagenes +
                 ", habitaciones=" + habitaciones +
+                ", servicios=" + servicios +
                 '}';
     }
 }

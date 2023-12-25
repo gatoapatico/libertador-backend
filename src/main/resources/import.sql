@@ -47,3 +47,58 @@ INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES 
 INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '601');
 INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '602');
 INSERT INTO habitacion (categoria_id, disponibilidad, numero_habitacion) VALUES (6, 'Disponible', '603');
+
+
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Wifi');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Desayuno buffet');
+INSERT INTO servicio (costo, nombre) VALUES (50, 'Mayordomo personal 24h');
+INSERT INTO servicio (costo, nombre) VALUES (20, 'Desayuno gourmet en la habitación');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Habitación Bar privado de licores premium');
+INSERT INTO servicio (costo, nombre) VALUES (10, 'Acceso a Salas de Épocas');
+INSERT INTO servicio (costo, nombre) VALUES (30, 'Atención personalizada de botones');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Minibar surtido con vinos y champagne');
+INSERT INTO servicio (costo, nombre) VALUES (20, 'Late check-out sujeto a disponibilidad');
+INSERT INTO servicio (costo, nombre) VALUES (100, 'Cena para 2 en Restaurante Retro');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Radio reloj vintage');
+INSERT INTO servicio (costo, nombre) VALUES (5, 'Centro de Entretenimiento Antiguo');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Descuento del 10% en Spa Vintage');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Máquina de café express');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Ambientación steampunk');
+INSERT INTO servicio (costo, nombre) VALUES (12, 'Desayuno continental en la habitación');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Balcón con vista panorámica');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Acceso a terraza exterior privada');
+INSERT INTO servicio (costo, nombre) VALUES (0, 'Conferencias');
+
+
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,3);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,4);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,5);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (1,6);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,7);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,8);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,9);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (2,10);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (3,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (3,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (3,11);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (3,12);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (3,13);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (4,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (4,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (4,14);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (4,15);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (4,16);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (5,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (5,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (5,17);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,1);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,2);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,18);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,14);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,4);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,3);
+INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,19);
