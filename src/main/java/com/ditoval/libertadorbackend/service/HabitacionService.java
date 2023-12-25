@@ -34,4 +34,8 @@ public class HabitacionService {
     public void deleteHabitacion(int id) {
         repository.deleteById(id);
     }
+
+    public List<Habitacion> getHabitacionesDisponibles() {
+        return repository.findAll();
+    }
 }

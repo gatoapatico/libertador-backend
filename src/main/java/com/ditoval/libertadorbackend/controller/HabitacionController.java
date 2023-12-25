@@ -39,4 +39,9 @@ public class HabitacionController {
     public void deleteHabitacion(@PathVariable int id) {
         service.deleteHabitacion(id);
     }
+
+    @GetMapping("/disponibles")
+    public List<Habitacion> getHabitacionesDisponibles() {
+        return service.getHabitacionesDisponibles();
+    }
 }
