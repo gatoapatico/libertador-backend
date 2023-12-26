@@ -3,7 +3,10 @@ package com.ditoval.libertadorbackend.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -82,5 +85,34 @@ public class Habitacion {
                 ", categoria=" + categoria +
                 ", reservas=" + reservas +
                 '}';
+    }
+
+    public List<Date> fechasReservadas() {
+        List<Date> fechas = new ArrayList<>();
+        if(reservas != null) {
+            for(Reserva reserva : reservas) {
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTime(reserva.getCheckIn());
+                while (!calendar.getTime().after(reserva.getCheckOut())) {
+                    fechas.add(calendar.getTime());
+                    calendar.add(Calendar.DATE, 1);
+                }
+            }
+        }
+        return fechas;
+    }
+
+    private String formatearFecha(Date fecha) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(fecha);
+    }
+
+    public List<String> getFechasReservadas() {
+        List<Date> fechas = fechasReservadas();
+        List<String> fechasFormateadas = new ArrayList<>();
+        for(Date fecha : fechas) {
+            fechasFormateadas.add(formatearFecha(fecha));
+        }
+        return fechasFormateadas;
     }
 }

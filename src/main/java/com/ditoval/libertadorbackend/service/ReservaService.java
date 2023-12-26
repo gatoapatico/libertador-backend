@@ -1,7 +1,11 @@
 package com.ditoval.libertadorbackend.service;
 
+import com.ditoval.libertadorbackend.entity.Habitacion;
 import com.ditoval.libertadorbackend.entity.Reserva;
+import com.ditoval.libertadorbackend.entity.Usuario;
+import com.ditoval.libertadorbackend.repository.HabitacionRepository;
 import com.ditoval.libertadorbackend.repository.ReservaRepository;
+import com.ditoval.libertadorbackend.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +17,18 @@ public class ReservaService {
     @Autowired
     private ReservaRepository repository;
 
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+    @Autowired
+    private HabitacionRepository habitacionRepository;
+
     public Reserva addReserva(Reserva reserva) {
-        reserva.setId(0); //SETEO DE ID EN NULO PARA EVITAR SOBREESCRITURA DE RESERVAS
+        Usuario usuario = usuarioRepository.findById(reserva.getUsuario().getId()).get();
+        Habitacion habitacion = habitacionRepository.findById(reserva.getHabitacion().getId()).get();
+        reserva.setId(0);
+        reserva.setUsuario(usuario);
+        reserva.setHabitacion(habitacion);
         return repository.save(reserva);
     }
 

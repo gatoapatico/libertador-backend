@@ -3,8 +3,10 @@ package com.ditoval.libertadorbackend.controller;
 import com.ditoval.libertadorbackend.entity.Habitacion;
 import com.ditoval.libertadorbackend.service.HabitacionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:5173")
@@ -41,7 +43,11 @@ public class HabitacionController {
     }
 
     @GetMapping("/disponibles")
-    public List<Habitacion> getHabitacionesDisponibles() {
-        return service.getHabitacionesDisponibles();
+    public List<Habitacion> getHabitacionesDisponibles(
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date checkin,
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date checkout
+    ) {
+        return service.getHabitacionesDisponibles(checkin, checkout);
     }
+
 }
