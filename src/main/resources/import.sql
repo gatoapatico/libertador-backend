@@ -104,6 +104,21 @@ INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,3);
 INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,19);
 
 
-INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2023-12-26', '2023-12-30', '2023-12-25', 1, 1, 'qwertyui');
-INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-10', '2024-01-15', '2023-12-25', 4, 1, 'asdfghjk');
-INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-20', '2024-01-25', '2023-12-25', 7, 1, 'zxcvbnmq');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-01', '2024-01-02', '2023-12-25', 1, 1, 'ge96oiut');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-03', '2024-01-04', '2023-12-25', 2, 1, '36vcsqrt');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-05', '2024-01-06', '2023-12-25', 3, 1, '5lopg461');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-08', '2024-01-09', '2023-12-25', 4, 1, 'tr469io2');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-10', '2024-01-11', '2023-12-25', 5, 1, 'q9a5v1j2');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-12', '2024-01-13', '2023-12-25', 6, 1, 'p36hgty4');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-15', '2024-01-16', '2023-12-25', 7, 1, '93ry5paz');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-17', '2024-01-18', '2023-12-25', 8, 1, '29aqpe66');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-19', '2024-01-20', '2023-12-25', 9, 1, '23hlw87q');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-22', '2024-01-23', '2023-12-25', 10, 1, '94ld6kq7');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-24', '2024-01-25', '2023-12-25', 11, 1, '13ms95hq');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-26', '2024-01-27', '2023-12-25', 12, 1, '6j4ddvc1');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-29', '2024-01-30', '2023-12-25', 13, 1, '963ljqaf');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-31', '2024-02-01', '2023-12-25', 14, 1, '1alp4r8f');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-02-02', '2024-02-03', '2023-12-25', 15, 1, '9q8w7e4r');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-02-05', '2024-02-06', '2023-12-25', 16, 1, '78qw9e8r');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-02-07', '2024-02-08', '2023-12-25', 17, 1, '12gaqmml');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-02-09', '2024-02-10', '2023-12-25', 18, 1, '6a325qrr');

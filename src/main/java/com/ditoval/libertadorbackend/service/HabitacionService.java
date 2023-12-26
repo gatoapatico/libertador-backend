@@ -5,6 +5,7 @@ import com.ditoval.libertadorbackend.repository.HabitacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -35,7 +36,14 @@ public class HabitacionService {
         repository.deleteById(id);
     }
 
-    public List<Habitacion> getHabitacionesDisponibles() {
-        return repository.findAll();
+    public List<Habitacion> getHabitacionesDisponibles(Date checkin, Date checkout) {
+        List<Habitacion> habitaciones = repository.findAll();
+
+        habitaciones.removeIf(habitacion ->
+                habitacion.fechasReservadas().stream()
+                        .anyMatch(fechaReservada ->
+                                !(checkin.after(fechaReservada) || checkout.before(fechaReservada)))
+        );
+        return habitaciones;
     }
 }
