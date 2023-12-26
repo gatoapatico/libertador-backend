@@ -1,9 +1,10 @@
 package com.ditoval.libertadorbackend.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Usuario {
@@ -18,6 +19,11 @@ public class Usuario {
     private String dni;
     private String telefono;
     private String tipo;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "usuario_id")
+    @JsonIgnoreProperties("usuario")
+    private List<Reserva> reservas = new ArrayList<>();
 
     public Usuario() {
     }
@@ -97,6 +103,14 @@ public class Usuario {
         this.tipo = tipo;
     }
 
+    public List<Reserva> getReservas() {
+        return reservas;
+    }
+
+    public void setReservas(List<Reserva> reservas) {
+        this.reservas = reservas;
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
@@ -108,6 +122,11 @@ public class Usuario {
                 ", dni='" + dni + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", tipo='" + tipo + '\'' +
+                ", reservas=" + reservas +
                 '}';
+    }
+
+    public void addReserva(Reserva reserva) {
+        this.reservas.add(reserva);
     }
 }

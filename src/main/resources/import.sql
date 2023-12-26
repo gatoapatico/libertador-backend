@@ -102,3 +102,8 @@ INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,14);
 INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,4);
 INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,3);
 INSERT INTO categoria_servicios (categoria_id, servicio_id) VALUES (6,19);
+
+
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2023-12-26', '2023-12-30', '2023-12-25', 1, 1, 'qwertyui');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-10', '2024-01-15', '2023-12-25', 4, 1, 'asdfghjk');
+INSERT INTO reserva (check_in, check_out, fecha_reserva, habitacion_id, usuario_id, codigo_reserva) VALUES ('2024-01-20', '2024-01-25', '2023-12-25', 7, 1, 'zxcvbnmq');
