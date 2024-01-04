@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ditoval</groupId>
     <artifactId>libertador-backend</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>libertador-backend</name>
     <description>libertador-backend</description>
     <properties>
