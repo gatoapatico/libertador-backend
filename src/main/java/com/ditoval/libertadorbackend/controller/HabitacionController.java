@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://libertadorhotel.netlify.app/")
 @RestController
 @RequestMapping("/habitaciones")
 public class HabitacionController {
